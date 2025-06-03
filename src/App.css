@@ -1,0 +1,81 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+.left-panel {
+  flex: 2;
+  background-color: #C7D3BF;
+  border-right: 5px solid #fff;
+}
+
+.right-panel {
+  flex: 1;
+  background-color: #C7D3BF;
+}
+
+.title {
+  text-align: center;
+  margin-top: 3px;
+  color: #fff;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.stage {
+  color: #fff;
+  text-align: left;
+}
+
+.balance {
+  color: #fff;
+  text-align: right;
+}
+
+.main-screen {
+  background-color: #007BFF;
+  width: 90%;
+  height: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  border-right: 5px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-left: 20px;
+}
+
+/* Grid Styles */
+.options-grid {
+  display: grid;
+  width: 100%;
+  margin-bottom: 0px;
+  align-self: flex-end;
+}
+
+.situation-prompt {
+  color: white;
+  text-align: center;
+}
+
+.option {
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 90%;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 1.2em;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

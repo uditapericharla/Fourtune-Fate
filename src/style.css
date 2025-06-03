@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+  }
+
+  h1 {
+    text-align: center;
+    font-family: monospace;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* so it's centered vertically, too */
+  }
+
+  /* Our walking sprite */
+  .walk1 {
+    width: 140px;               /* width of one frame */
+    height: 300px;              /* height of one frame */
+    background-image: url("img/walk1.png");
+    background-repeat: no-repeat;
+    background-size: 840px;     /* total width for all frames in the sprite */
+    animation: w1Effect 1s steps(6) infinite;
+  }
+
+  @keyframes w1Effect {
+    from {
+      /* Start showing the first frame at x=0, y=0 */
+      background-position: -22.5px;
+    }
+    to {
+      /* Move the background to -900px on the x-axis */
+      background-position: -850px 0;
+    }
+  }
+
